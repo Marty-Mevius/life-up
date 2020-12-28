@@ -1,0 +1,12 @@
+.l-page-main-floor {
+  height: 100%;
+}
+.l-page-main-room {
+ height: 100%;
+}
+.l-page-main-contents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 32px;
+}

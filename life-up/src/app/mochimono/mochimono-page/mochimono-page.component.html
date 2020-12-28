@@ -1,0 +1,19 @@
+<app-tool-bar toolBarTitle="持ち物管理"></app-tool-bar>
+<div class="l-page-main-floor">
+
+  <mat-drawer-container class="l-page-main-room">
+    <mat-drawer #drawer mode="side" class="l-page-drawer-room">
+      <p>カテゴリー</p>
+    </mat-drawer>
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon color="primary">category</mat-icon>
+    </button>
+    <div class="l-page-main-contents">
+      <ng-container *ngFor="let item of items">
+
+        <app-item-card [item]="item"></app-item-card>
+
+      </ng-container>
+    </div>
+  </mat-drawer-container>
+</div>

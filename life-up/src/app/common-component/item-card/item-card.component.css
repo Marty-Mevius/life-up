@@ -1,0 +1,14 @@
+.item-card {
+  margin: 16px;
+  width: 256px;
+}
+.item-img {
+  padding: 4px;
+}
+.item-content {
+  display: flex;
+  flex-direction: column;
+}
+.item-text {
+  overflow-wrap: break-word;
+}

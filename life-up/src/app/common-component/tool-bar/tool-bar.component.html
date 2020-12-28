@@ -1,0 +1,11 @@
+<mat-toolbar color="warn">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>{{toolBarTitle}}</span>
+</mat-toolbar>
+<mat-menu #menu="matMenu">
+  <button id="portal" mat-menu-item (click)="onMenuClick($event)">ポータル</button>
+  <button id="mochimono" mat-menu-item (click)="onMenuClick($event)">持ち物管理</button>
+  <button id="wanted" mat-menu-item (click)="onMenuClick($event)">欲しいもの管理</button>
+</mat-menu>

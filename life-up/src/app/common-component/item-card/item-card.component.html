@@ -1,0 +1,30 @@
+<div class="item-card">
+  <mat-card>
+
+    <mat-card-header>
+      <mat-card-title>{{item.name}}</mat-card-title>
+    </mat-card-header>
+
+    <div class="item-img">
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    </div>
+
+    <mat-card-subtitle>{{item.price}}</mat-card-subtitle>
+
+    <mat-card-content>
+      <div class="item-content">
+        <span class="item-text">ブランド：{{item.brand}}</span>
+        <span class="item-text">購入日：{{item.addDate}}</span>
+        <span class="item-text">備考1：{{item.description1}}</span>
+        <span class="item-text">備考2：{{item.description2}}</span>
+        <span class="item-text">備考3：{{item.description3}}</span>
+        <span class="item-text">備考4：{{item.description4}}</span>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-button>詳細</button>
+    </mat-card-actions>
+
+  </mat-card>
+</div>
